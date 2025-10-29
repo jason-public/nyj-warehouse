@@ -587,7 +587,7 @@ const App = () => {
       <header className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-8 shadow-lg">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center">남양주시 물류창고 현황 대시보드</h1>
-          <p className="text-center mt-2 text-indigo-100">실시간 지역별 물류창고 현황 조회</p>
+          <p className="text-center mt-2 text-indigo-100">지역별, 업체별 물류창고 현황 조회</p>
         </div>
       </header>
 
