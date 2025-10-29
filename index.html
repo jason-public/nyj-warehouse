@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>남양주시 물류창고 현황 대시보드</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        
+        .gradient-bg-1 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-bg-2 {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .gradient-bg-3 {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        .gradient-bg-4 {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+        
+        .gradient-bg-5 {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        
+        .table-row-hover:hover {
+            background-color: #f3f4f6;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .table-row-hover:hover {
+                background-color: #374151;
+            }
+        }
+        
+        .checkbox-custom {
+            transition: all 0.2s ease;
+        }
+        
+        .checkbox-custom:checked {
+            background-color: #667eea;
+            border-color: #667eea;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div id="root"></div>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
